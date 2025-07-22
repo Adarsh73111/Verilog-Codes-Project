@@ -1,161 +1,278 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2017.4 (64-bit)              -->
-<!--                                                         -->
-<!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
+// Booth's Multiplier //
 
-<Project Version="7" Minor="35" Path="F:/Vivado_Projects/Booths_Multiplier_8bits_Project/Booths_Multiplier_8bits_Project.xpr">
-  <DefaultLaunch Dir="$PRUNDIR"/>
-  <Configuration>
-    <Option Name="Id" Val="f5d12db635684531b63ab48864df3fe9"/>
-    <Option Name="Part" Val="xc7a100tcsg324-1"/>
-    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
-    <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
-    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
-    <Option Name="SimulatorLanguage" Val="Verilog"/>
-    <Option Name="BoardPart" Val="digilentinc.com:nexys4_ddr:part0:1.1"/>
-    <Option Name="ActiveSimSet" Val="sim_1"/>
-    <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
-    <Option Name="IPCachePermission" Val="read"/>
-    <Option Name="IPCachePermission" Val="write"/>
-    <Option Name="EnableCoreContainer" Val="FALSE"/>
-    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
-    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
-    <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="DSAVendor" Val="xilinx"/>
-    <Option Name="DSABoardId" Val="nexys4_ddr"/>
-    <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="11"/>
-    <Option Name="WTModelSimLaunchSim" Val="0"/>
-    <Option Name="WTQuestaLaunchSim" Val="0"/>
-    <Option Name="WTIesLaunchSim" Val="0"/>
-    <Option Name="WTVcsLaunchSim" Val="0"/>
-    <Option Name="WTRivieraLaunchSim" Val="0"/>
-    <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
-    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
-    <Option Name="XSimRadix" Val="hex"/>
-    <Option Name="XSimTimeUnit" Val="ns"/>
-    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
-    <Option Name="XSimTraceLimit" Val="65536"/>
-    <Option Name="SimTypes" Val="rtl"/>
-  </Configuration>
-  <FileSets Version="1" Minor="31">
-    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
-      <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/booth_multiplier.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/booth_mutiplier.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="top"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
-      <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constrs_1/new/top_fpga.xdc">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="ConstrsType" Val="XDC"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
-      <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/new/tb_booth_multiplier.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="tb_top"/>
-        <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
-        <Option Name="TransportPathDelay" Val="0"/>
-        <Option Name="TransportIntDelay" Val="0"/>
-        <Option Name="SrcSet" Val="sources_1"/>
-      </Config>
-    </FileSet>
-  </FileSets>
-  <Simulators>
-    <Simulator Name="XSim">
-      <Option Name="Description" Val="Vivado Simulator"/>
-      <Option Name="CompiledLib" Val="0"/>
-    </Simulator>
-    <Simulator Name="ModelSim">
-      <Option Name="Description" Val="ModelSim Simulator"/>
-    </Simulator>
-    <Simulator Name="Questa">
-      <Option Name="Description" Val="Questa Advanced Simulator"/>
-    </Simulator>
-    <Simulator Name="Riviera">
-      <Option Name="Description" Val="Riviera-PRO Simulator"/>
-    </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
-    </Simulator>
-  </Simulators>
-  <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-  </Runs>
-  <Board>
-    <Jumpers/>
-  </Board>
-</Project>
+`timescale 1ns / 1ps
+
+module booth_multiplier (
+    input clk,
+    input rst,
+    input start,
+    input [7:0] m,
+    input [7:0] q,
+    output reg [15:0] product,
+    output reg done_flag
+);
+    reg [16:0] shift_reg;  // [16:9] = A, [8:1] = Q, [0] = Q-1
+    reg [7:0] m_reg;
+    reg [3:0] count;
+    reg [1:0] state;
+    reg step; // 0: add/sub, 1: shift
+
+    parameter IDLE = 2'b00, CALC = 2'b01, DONE = 2'b10;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            shift_reg <= 0;
+            m_reg <= 0;
+            product <= 0;
+            done_flag <= 0;
+            count <= 0;
+            state <= IDLE;
+            step <= 0;
+        end else begin
+            case (state)
+                IDLE: begin
+                    done_flag <= 0;
+                    if (start) begin
+                        shift_reg <= {9'b0, q, 1'b0};
+                        m_reg <= m;
+                        count <= 8;
+                        step <= 0;
+                        state <= CALC;
+                    end
+                end
+                CALC: begin
+                    if (step == 0) begin
+                        // Step 1: ADD/SUB
+                        case (shift_reg[1:0])
+                            2'b01: shift_reg[16:9] <= shift_reg[16:9] + m_reg;
+                            2'b10: shift_reg[16:9] <= shift_reg[16:9] - m_reg;
+                        endcase
+                        step <= 1;
+                    end else begin
+                        // Step 2: ARS
+                        shift_reg <= {shift_reg[16], shift_reg[16:1]};
+                        count <= count - 1;
+                        step <= 0;
+                        if (count == 1)
+                            state <= DONE;
+                    end
+                end
+                DONE: begin
+                    product <= shift_reg[16:1];
+                    done_flag <= 1;
+                    state <= IDLE;
+                end
+            endcase
+        end
+    end
+endmodule
+
+
+
+// TOP MODULE //
+
+`timescale 1ns / 1ps
+
+module top (
+    input clk,
+    input rst,
+    input start,
+    input [7:0] m,
+    input [7:0] q,
+    output [6:0] disp_seg_o,
+    output [7:0] disp_an_o,  // Now 8-bit anode for Nexys 4 DDR
+    output dp
+);
+
+    wire [15:0] product;
+    wire done_flag;
+
+    booth_multiplier uut (
+        .clk(clk),
+        .rst(rst),
+        .start(start),
+        .m(m),
+        .q(q),
+        .product(product),
+        .done_flag(done_flag)
+    );
+
+    reg [19:0] clkdiv = 0;
+    always @(posedge clk) clkdiv <= clkdiv + 1;
+
+    wire [1:0] digit_sel = clkdiv[17:16];  // 4-digit refresh selector
+
+    reg [3:0] hex_digit;
+    reg [6:0] seg;
+
+    // Activate only lower 4 digits (anodes are active-low)
+    // disp_an_o[7:4] = 1 (off), disp_an_o[3:0] = rotating active-low
+    reg [7:0] anode_mask;
+    always @(*) begin
+        case (digit_sel)
+            2'b00: anode_mask = 8'b11111110;
+            2'b01: anode_mask = 8'b11111101;
+            2'b10: anode_mask = 8'b11111011;
+            2'b11: anode_mask = 8'b11110111;
+            default: anode_mask = 8'b11111111;
+        endcase
+    end
+
+    // Select the 4-bit nibble from the 16-bit product to display
+    always @(*) begin
+        case (digit_sel)
+            2'b00: hex_digit = product[3:0];
+            2'b01: hex_digit = product[7:4];
+            2'b10: hex_digit = product[11:8];
+            2'b11: hex_digit = product[15:12];
+            default: hex_digit = 4'h0;
+        endcase
+    end
+
+    // Hex to 7-segment decoder
+    always @(*) begin
+        case (hex_digit)
+            4'h0: seg = 7'b1000000;
+            4'h1: seg = 7'b1111001;
+            4'h2: seg = 7'b0100100;
+            4'h3: seg = 7'b0110000;
+            4'h4: seg = 7'b0011001;
+            4'h5: seg = 7'b0010010;
+            4'h6: seg = 7'b0000010;
+            4'h7: seg = 7'b1111000;
+            4'h8: seg = 7'b0000000;
+            4'h9: seg = 7'b0010000;
+            4'hA: seg = 7'b0001000;
+            4'hB: seg = 7'b0000011;
+            4'hC: seg = 7'b1000110;
+            4'hD: seg = 7'b0100001;
+            4'hE: seg = 7'b0000110;
+            4'hF: seg = 7'b0001110;
+            default: seg = 7'b1111111;
+        endcase
+    end
+
+    assign disp_seg_o = seg;
+    assign disp_an_o = anode_mask;  // Final anode output (active-low)
+    assign dp = done_flag;          // Optional use of DP for done_flag
+
+endmodule
+
+
+// TEST-BENCH //
+
+`timescale 1ns / 1ps
+
+module tb_top;
+
+    reg clk;
+    reg rst;
+    reg start;
+    reg [7:0] m;
+    reg [7:0] q;
+
+    wire [6:0] disp_seg_o;
+    wire [3:0] disp_an_o;
+    wire dp; // Done flag output connected to decimal point
+
+    // Instantiate the top module
+    top uut (
+        .clk(clk),
+        .rst(rst),
+        .start(start),
+        .m(m),
+        .q(q),
+        .disp_seg_o(disp_seg_o),
+        .disp_an_o(disp_an_o),
+        .dp(dp)
+    );
+
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;  // 10ns period = 100MHz
+    end
+
+    initial begin
+        rst = 1;
+        start = 0;
+        m = 0;
+        q = 0;
+        #20;
+        rst = 0;
+
+        // --- Test Case 1: 5 * 3 = 15 ---
+        wait (dp == 0);
+        m = 8'd5;
+        q = 8'd3;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        // --- Test Case 2: -5 * 3 = -15 ---
+        wait (dp == 0);
+        m = -8'sd5;
+        q = 8'd3;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        // --- Test Case 3: -5 * -3 = 15 ---
+        wait (dp == 0);
+        m = -8'sd5;
+        q = -8'sd3;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        // --- Test Case 4: 7 * -2 = -14 ---
+        wait (dp == 0);
+        m = 8'd7;
+        q = -8'sd2;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        // --- Test Case 5: 4 * -3 = -12 ---
+        wait (dp == 0);
+        m = 8'd4;
+        q = -8'sd3;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        // --- Test Case 6: 3 * -3 = -9 ---
+        wait (dp == 0);
+        m = 8'd3;
+        q = -8'sd3;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        // --- Test Case 7: -3 * -3 = 9 ---
+        wait (dp == 0);
+        m = -8'sd3;
+        q = -8'sd3;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        // --- Test Case 8: 4 * 3 = 12 ---
+        wait (dp == 0);
+        m = 8'd4;
+        q = 8'd3;
+        start = 1;
+        #10; start = 0;
+        wait (dp == 1);
+        #100;
+
+        $finish;
+    end
+
+endmodule
